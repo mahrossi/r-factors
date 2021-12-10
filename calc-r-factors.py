@@ -114,10 +114,10 @@ def _main():
    
 # read spectra in
    input_theory=open(options.theory)
-   tspec=[map(float,line.split()) for line in input_theory.readlines()]
+   tspec=[list(map(float,line.split())) for line in input_theory.readlines()]
    input_theory.close()
    input_exp=open(options.exp)
-   espec=[map(float,line.split()) for line in input_exp.readlines()]
+   espec=[list(map(float,line.split())) for line in input_exp.readlines()]
    input_exp.close()
 
 # read r-fac.in
